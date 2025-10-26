@@ -5,6 +5,7 @@ import Image from 'next/image';
 import CheckIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
+import SectionHeader from "@/components/SectionHeader";
 
 const portfolioProjects = [
   {
@@ -50,11 +51,12 @@ export const ProjectsSection = () => {
 
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <div className="flex justify-center">
+        <SectionHeader eyebrow="Real-World Results" title="Featured Projects" description="See how we transformed concepts into real-world systems"></SectionHeader>
+        {/* <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-[#10b96a] to-sky-400 text-center bg-clip-text text-transparent">Real-World Results</p>
         </div>
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
-        <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">See how we transformed concepts into real-world systems</p>
+        <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">See how we transformed concepts into real-world systems</p> */}
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {
             portfolioProjects.map((project) => (
